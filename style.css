@@ -87,6 +87,7 @@ header {
 }
 
 .content {
+    margin-bottom: 7rem;
     max-width: 500px;
     color: #555;
 }
@@ -160,26 +161,25 @@ header {
 
 .social-icons a i {
     color: #fff;
-
+}
 /* Animation Container (Positioned to the right) */
 .animation-container {
-    position: absolute;  /* Absolutely position within the parent (.home) */
-    top: 0;  /* Align to the top */
-    right: 100px;  /* Align to the right */
-    width: 80%;  /* Make it take up 50% of the screen width */
-    height: 100vh;  /* Make it cover the full viewport height */
-    z-index: 1;  /* Ensure it's on top of the background but behind text/content */
+    position: absolute;
+    top: 0; 
+    left:26rem; 
+    width: 80%;  
+    height: 100vh;  
+    z-index: 1; 
     display: flex;
-    justify-content: center;  /* Center the animation horizontally */
-    align-items: center;  /* Center the animation vertically */
-    pointer-events: none;  /* Allow interaction with other elements above it */
+    justify-content: center;  
+    align-items: center;  
+    pointer-events: none;  
 }
 
 /* Optional: Adjust the Lottie player size */
 .animation-container dotlottie-player {
-    max-width: 600px;  /* Limit max width */
-    max-height: 600px; /* Limit max height */
+    max-width: 600px;
+    max-height: 600px;
     width: 100%;
-    margin-right: 100px;/* Fill the container */
-    height: auto;  /* Adjust height automatically to keep aspect ratio */
+    height: auto;  
 }

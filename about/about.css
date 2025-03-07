@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.slider {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    max-width: 600px;
+}
+
+.card {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+    margin: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px;
+}
+
+button:focus {
+    outline: none;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 20px;
+            /* Curved border for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .input-group {
+            text-align: left;
+            padding: 3px 0px 0px 30px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input[type="text"],
+        .input-group input[type="email"],
+        .input-group input[type="password"],
+        .input-group input[type="tel"] {
+            width: 85%;
+            background-color: #cccccc1f;
+            padding: 10px;
+            border-radius: 5px;
+            /* Curved borders for input fields */
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+
+        .container button {
+            width: 82%;
+            padding: 15px;
+            /* Added padding to buttons */
+            border: none;
+            border-radius: 25px;
+            /* Curved borders for buttons */
+            font-size: 16px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+
+        .container .signup-btn {
+            width: 82%;
+            background-color: #10B981;
+            color: #fff;
+            padding: 9px;
+        }
+
+        .container .google-signup {
+            padding: 5px;
+            margin-left: 2rem;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container .google-signup img {
+            margin-right: 10px;
+        }
+
+        .container .login-link {
+            margin-top: 10px;
+        }
+
+        .container .login-link a {
+            color: #10B981;
+            text-decoration: none;
+        }
+
+        .or1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 0px;
+            font-weight: lighter;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form>
+            <div class="input-group">
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" placeholder="Rahul tondare" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="rahultondare.habuild@gmail.com" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="***********" required>
+                <span id="togglePassword"
+                    style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer;">
+                </span>
+            </div>
+            <div class="input-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="919130446869" required>
+            </div>
+
+            <button type="submit" class="signup-btn">Sign Up</button>
+            <br>
+            <h2 class="or1">OR</h2>
+            <button type="button" class="google-signup">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2my06AFxfZ0NX8UqthRmZ3nJrbCyxemzntrEYLEMrDFdz98zqJdy6PHfcvv6KJx87Spk&usqp=CAU"
+                    style="width: 2rem;" alt="Google logo"> Sign Up with Google
+            </button>
+            <div class="login-link">
+                Already have an Account? <a href="#">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
